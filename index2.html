@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .box{
+            width: 40px;
+            height: 40px;
+            background-color: black;
+        }
+        .red{
+            width: 40px;
+            height: 40px;
+            background-color: red;
+        }
+        .blue{
+            width: 40px;
+            height: 40px;
+            background-color: blue;
+        }
+        .yellow{
+            width: 40px;
+            height: 40px;
+            background-color: yellow;
+        }
+        .colors{
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+    <div class="box"></div>
+    <div class = "colors">
+        <div class = "red">
+
+        </div>
+        <div class = "blue">
+            
+        </div>
+        <div class = "yellow">
+            
+        </div>
+    </div>
+    <script>
+        const box = document.querySelector(".box")
+        const red = document.getElementsByClassName("red")[0]
+        const blue = document.getElementsByClassName("blue")[0]
+        const yellow = document.getElementsByClassName("yellow")[0]
+        red.addEventListener('click',  (e) => {
+            box.style.backgroundColor = "red"
+        })
+
+        blue.addEventListener('click',  (e) => {
+            box.style.backgroundColor = "blue"
+        })
+
+        yellow.addEventListener('click',  (e) => {
+            box.style.backgroundColor = "yellow"
+        })
+    </script>
+</body>
+</html>

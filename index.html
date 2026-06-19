@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bar-header">
+        <div class="status-bar">
+            <div class="container">
+                <div class="time">9:41</div>
+                <div class="img-icon">
+                    <img src="image/Status Icons.svg" alt="icon">
+                </div>
+            </div>
+        </div>
+
+        <div class="status-bar">
+            <div class="container">
+                <div class="title-name">TODO TASK</div>
+                <div class="img-calender">
+                    <img src="image/calendar.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="date-n-time">
+        <div class="container">
+            <div class="date-task">25.2.2024</div>
+
+            <div class="time-task">9:41</div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <img src="image/Group 2.svg" alt="">
+
+        <img src="image/Group 1.svg" alt="">
+    </div>
+
+    <div class="main-task">
+        <div class="task" id="task1">
+            <div class="content">add your todo item hereadd your todo item here</div>
+
+            <div class="box-icon">
+                <button class="icon-btn edit-btn">
+                    <i class="fa-solid fa-pencil"></i>
+                </button>
+            
+                <button class="icon-btn check-btn" parent="task1">
+                    <i class="fa-solid fa-circle-check"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="task" id="task2">
+            <div class="content">add your todo item hereadd your todo item here</div>
+        
+            <div class="box-icon">
+                <button class="icon-btn edit-btn">
+                    <i class="fa-solid fa-pencil"></i>
+                </button>
+            
+                <button class="icon-btn check-btn" parent="task2">
+                    <i class="fa-solid fa-circle-check"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="task" id="task3">
+            <div class="content">add your todo item hereadd your todo item here</div>
+        
+            <div class="box-icon">
+                <button class="icon-btn edit-btn">
+                    <i class="fa-solid fa-pencil"></i>
+                </button>
+            
+                <button class="icon-btn check-btn" parent="task3">
+                    <i class="fa-solid fa-circle-check"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="task" id="task4">
+            <div class="content">add your todo item hereadd your todo item here</div>
+        
+            <div class="box-icon">
+                <button class="icon-btn edit-btn">
+                    <i class="fa-solid fa-pencil"></i>
+                </button>
+            
+                <button class="icon-btn check-btn" parent="task4">
+                    <i class="fa-solid fa-circle-check"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="task" id="task5">
+            <div class="content">add your todo item hereadd your todo item here</div>
+        
+            <div class="box-icon">
+                <button class="icon-btn edit-btn">
+                    <i class="fa-solid fa-pencil"></i>
+                </button>
+            
+                <button class="icon-btn check-btn" parent="task5">
+                    <i class="fa-solid fa-circle-check"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="task" id="task6">
+            <div class="content">add your todo item hereadd your todo item here</div>
+        
+            <div class="box-icon">
+                <button class="icon-btn edit-btn">
+                    <i class="fa-solid fa-pencil"></i>
+                </button>
+            
+                <button class="icon-btn check-btn" parent="task6">
+                    <i class="fa-solid fa-circle-check"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <a href="add-task.html">
+        <div class="add-task">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+    </a>
+    
+    <script>
+        const checkButtons = document.querySelectorAll('.check-btn');
+
+        checkButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                const parentId = e.currentTarget.getAttribute('parent');
+                const parentTask = document.getElementById(parentId);
+
+                if (parentTask) {
+                    parentTask.classList.toggle('active-green');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

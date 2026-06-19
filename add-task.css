@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost";
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(196.42deg, #0B1197 28.66%, rgba(4, 8, 121, 0.234931) 99.54%, rgba(7, 12, 124, 0) 99.55%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar-header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.status-bar {
+    width: 95%;
+    padding: 12px 0;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container2 {
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}
+
+i {
+    font-size: 25px;
+}
+
+.title-name {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    font-size: 24px;
+}
+
+.detail {
+    width: 75%;
+    margin: 115px 0 60px;
+    color: rgb(255, 255, 255);
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(216, 223, 230, 0.25);
+}
+
+.btn-add {
+    width: 75%;
+    background-color: rgba(32, 36, 80, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 16px 8px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+
+
